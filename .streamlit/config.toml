@@ -1,11 +1,16 @@
 [server]
-headless = true
-address = "0.0.0.0"
-port = 5000
+port = 8501
+address = "localhost"
+enableCORS = false
+enableXsrfProtection = true
+
+[browser]
+serverAddress = "localhost"
+serverPort = 8501
 
 [theme]
-primaryColor = "#4CAF50"
-backgroundColor = "#FFFFFF"
-secondaryBackgroundColor = "#F0F2F6"
+primaryColor = "#0066cc"
+backgroundColor = "#f0f2f6"
+secondaryBackgroundColor = "#e0e2e6"
 textColor = "#262730"
 font = "sans serif"
