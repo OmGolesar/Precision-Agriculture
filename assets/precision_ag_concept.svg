@@ -1,0 +1,256 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="600" fill="#f5f5f5"/>
+  
+  <!-- Field Base -->
+  <rect x="50" y="150" width="700" height="400" fill="#f0e68c"/>
+  
+  <!-- Field Grid - representing precision agriculture zones -->
+  <g stroke="#d2b48c" stroke-width="2">
+    <!-- Vertical lines -->
+    <line x1="150" y1="150" x2="150" y2="550"/>
+    <line x1="250" y1="150" x2="250" y2="550"/>
+    <line x1="350" y1="150" x2="350" y2="550"/>
+    <line x1="450" y1="150" x2="450" y2="550"/>
+    <line x1="550" y1="150" x2="550" y2="550"/>
+    <line x1="650" y1="150" x2="650" y2="550"/>
+    
+    <!-- Horizontal lines -->
+    <line x1="50" y1="250" x2="750" y2="250"/>
+    <line x1="50" y1="350" x2="750" y2="350"/>
+    <line x1="50" y1="450" x2="750" y2="450"/>
+  </g>
+  
+  <!-- Field Zone Coloring - representing different management zones -->
+  <g opacity="0.5">
+    <!-- Healthy zones - dark green -->
+    <rect x="50" y="150" width="100" height="100" fill="#228B22"/>
+    <rect x="250" y="150" width="100" height="100" fill="#228B22"/>
+    <rect x="550" y="150" width="100" height="100" fill="#228B22"/>
+    <rect x="150" y="250" width="100" height="100" fill="#228B22"/>
+    <rect x="450" y="250" width="100" height="100" fill="#228B22"/>
+    <rect x="650" y="250" width="100" height="100" fill="#228B22"/>
+    <rect x="50" y="350" width="100" height="100" fill="#228B22"/>
+    <rect x="350" y="350" width="100" height="100" fill="#228B22"/>
+    <rect x="550" y="350" width="100" height="100" fill="#228B22"/>
+    <rect x="250" y="450" width="100" height="100" fill="#228B22"/>
+    <rect x="450" y="450" width="100" height="100" fill="#228B22"/>
+    <rect x="650" y="450" width="100" height="100" fill="#228B22"/>
+    
+    <!-- Moderate zones - medium green -->
+    <rect x="150" y="150" width="100" height="100" fill="#32CD32"/>
+    <rect x="350" y="150" width="100" height="100" fill="#32CD32"/>
+    <rect x="650" y="150" width="100" height="100" fill="#32CD32"/>
+    <rect x="50" y="250" width="100" height="100" fill="#32CD32"/>
+    <rect x="350" y="250" width="100" height="100" fill="#32CD32"/>
+    <rect x="550" y="250" width="100" height="100" fill="#32CD32"/>
+    <rect x="150" y="350" width="100" height="100" fill="#32CD32"/>
+    <rect x="450" y="350" width="100" height="100" fill="#32CD32"/>
+    <rect x="650" y="350" width="100" height="100" fill="#32CD32"/>
+    <rect x="50" y="450" width="100" height="100" fill="#32CD32"/>
+    <rect x="350" y="450" width="100" height="100" fill="#32CD32"/>
+    <rect x="550" y="450" width="100" height="100" fill="#32CD32"/>
+    
+    <!-- Stressed zones - light green/yellow -->
+    <rect x="450" y="150" width="100" height="100" fill="#ADFF2F"/>
+    <rect x="250" y="250" width="100" height="100" fill="#ADFF2F"/>
+    <rect x="250" y="350" width="100" height="100" fill="#ADFF2F"/>
+    <rect x="150" y="450" width="100" height="100" fill="#ADFF2F"/>
+  </g>
+  
+  <!-- Data Collection Icons -->
+  
+  <!-- Drone/UAV -->
+  <g transform="translate(200, 100)">
+    <!-- Drone body -->
+    <rect x="-15" y="-5" width="30" height="10" rx="5" fill="#333"/>
+    <circle cx="0" cy="0" r="6" fill="#444"/>
+    
+    <!-- Rotors -->
+    <g>
+      <!-- Top left rotor -->
+      <circle cx="-20" cy="-20" r="4" fill="#666"/>
+      <line x1="-24" y1="-20" x2="-16" y2="-20" stroke="#999" stroke-width="1"/>
+      <line x1="-20" y1="-24" x2="-20" y2="-16" stroke="#999" stroke-width="1"/>
+    </g>
+    
+    <g>
+      <!-- Top right rotor -->
+      <circle cx="20" cy="-20" r="4" fill="#666"/>
+      <line x1="16" y1="-20" x2="24" y2="-20" stroke="#999" stroke-width="1"/>
+      <line x1="20" y1="-24" x2="20" y2="-16" stroke="#999" stroke-width="1"/>
+    </g>
+    
+    <g>
+      <!-- Bottom left rotor -->
+      <circle cx="-20" cy="20" r="4" fill="#666"/>
+      <line x1="-24" y1="20" x2="-16" y2="20" stroke="#999" stroke-width="1"/>
+      <line x1="-20" y1="16" x2="-20" y2="24" stroke="#999" stroke-width="1"/>
+    </g>
+    
+    <g>
+      <!-- Bottom right rotor -->
+      <circle cx="20" cy="20" r="4" fill="#666"/>
+      <line x1="16" y1="20" x2="24" y2="20" stroke="#999" stroke-width="1"/>
+      <line x1="20" y1="16" x2="20" y2="24" stroke="#999" stroke-width="1"/>
+    </g>
+    
+    <!-- Arms -->
+    <line x1="0" y1="0" x2="-20" y2="-20" stroke="#555" stroke-width="2"/>
+    <line x1="0" y1="0" x2="20" y2="-20" stroke="#555" stroke-width="2"/>
+    <line x1="0" y1="0" x2="-20" y2="20" stroke="#555" stroke-width="2"/>
+    <line x1="0" y1="0" x2="20" y2="20" stroke="#555" stroke-width="2"/>
+    
+    <!-- Camera -->
+    <rect x="-4" y="8" width="8" height="5" rx="1" fill="#222"/>
+    <circle cx="0" cy="10.5" r="2" fill="#444" stroke="#222"/>
+  </g>
+  
+  <!-- Satellite -->
+  <g transform="translate(600, 80)">
+    <!-- Main body -->
+    <rect x="-15" y="-5" width="30" height="10" rx="2" fill="#888"/>
+    
+    <!-- Solar panels -->
+    <rect x="-40" y="-8" width="20" height="16" fill="#4169E1"/>
+    <rect x="20" y="-8" width="20" height="16" fill="#4169E1"/>
+    
+    <!-- Dish -->
+    <circle cx="0" cy="15" r="8" fill="#AAA"/>
+    <path d="M -5,10 Q 0,22 5,10" stroke="#888" stroke-width="1" fill="none"/>
+    
+    <!-- Connection to body -->
+    <line x1="0" y1="5" x2="0" y2="7" stroke="#888" stroke-width="3"/>
+  </g>
+  
+  <!-- Sensor -->
+  <g transform="translate(400, 80)">
+    <!-- Base -->
+    <rect x="-10" y="0" width="20" height="5" rx="1" fill="#888"/>
+    
+    <!-- Sensor head -->
+    <rect x="-7" y="-15" width="14" height="15" rx="2" fill="#666"/>
+    
+    <!-- Sensor elements -->
+    <circle cx="-3" cy="-10" r="2" fill="#1E90FF"/>
+    <circle cx="3" cy="-10" r="2" fill="#FF4500"/>
+    <circle cx="-3" cy="-5" r="2" fill="#32CD32"/>
+    <circle cx="3" cy="-5" r="2" fill="#FFD700"/>
+    
+    <!-- Connection wire -->
+    <path d="M 0,5 Q -15,10 -20,25" stroke="#444" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Data Flow Visualization -->
+  <!-- Connection lines from sensors to central processing -->
+  <g stroke="#4682B4" stroke-width="2" stroke-dasharray="5,3">
+    <path d="M 200,100 Q 300,80 400,80" fill="none"/>
+    <path d="M 600,80 Q 500,60 400,80" fill="none"/>
+    <path d="M 400,80 L 400,300" fill="none"/>
+  </g>
+  
+  <!-- Central Processing Hub -->
+  <g transform="translate(400, 300)">
+    <!-- Computer server rack -->
+    <rect x="-30" y="-25" width="60" height="50" rx="5" fill="#4682B4"/>
+    
+    <!-- Server details -->
+    <rect x="-25" y="-20" width="50" height="5" fill="#333"/>
+    <rect x="-25" y="-10" width="50" height="5" fill="#333"/>
+    <rect x="-25" y="0" width="50" height="5" fill="#333"/>
+    <rect x="-25" y="10" width="50" height="5" fill="#333"/>
+    
+    <!-- Indicator lights -->
+    <circle cx="20" cy="-17.5" r="2" fill="#00FF00"/>
+    <circle cx="20" cy="-7.5" r="2" fill="#00FF00"/>
+    <circle cx="20" cy="2.5" r="2" fill="#FFA500"/>
+    <circle cx="20" cy="12.5" r="2" fill="#00FF00"/>
+  </g>
+  
+  <!-- Decision Output Visualization -->
+  <g stroke="#228B22" stroke-width="2">
+    <!-- Lines connecting processing to field operations -->
+    <path d="M 400,325 Q 250,380 100,450" fill="none" stroke-dasharray="5,3"/>
+    <path d="M 400,325 Q 550,380 700,450" fill="none" stroke-dasharray="5,3"/>
+  </g>
+  
+  <!-- Farm Equipment -->
+  <!-- Tractor with fertilizer sprayer -->
+  <g transform="translate(100, 500)">
+    <!-- Tractor body -->
+    <rect x="-20" y="-15" width="40" height="25" rx="5" fill="#D2691E"/>
+    
+    <!-- Cab -->
+    <rect x="-10" y="-25" width="20" height="15" rx="3" fill="#8B4513"/>
+    <rect x="-7" y="-22" width="14" height="8" fill="#ADD8E6"/>
+    
+    <!-- Wheels -->
+    <circle cx="-15" cy="15" r="10" fill="#333"/>
+    <circle cx="15" cy="15" r="10" fill="#333"/>
+    <circle cx="-15" cy="15" r="5" fill="#555"/>
+    <circle cx="15" cy="15" r="5" fill="#555"/>
+    
+    <!-- Sprayer boom -->
+    <rect x="20" y="-10" width="40" height="5" fill="#888"/>
+    <rect x="25" y="-15" width="2" height="10" fill="#888"/>
+    <rect x="35" y="-15" width="2" height="10" fill="#888"/>
+    <rect x="45" y="-15" width="2" height="10" fill="#888"/>
+    <rect x="55" y="-15" width="2" height="10" fill="#888"/>
+    
+    <!-- Spray mist -->
+    <circle cx="25" cy="-18" r="2" fill="#87CEEB" opacity="0.5"/>
+    <circle cx="35" cy="-18" r="2" fill="#87CEEB" opacity="0.5"/>
+    <circle cx="45" cy="-18" r="2" fill="#87CEEB" opacity="0.5"/>
+    <circle cx="55" cy="-18" r="2" fill="#87CEEB" opacity="0.5"/>
+  </g>
+  
+  <!-- Irrigation system -->
+  <g transform="translate(700, 500)">
+    <!-- Center pivot base -->
+    <circle cx="0" cy="0" r="15" fill="#888"/>
+    
+    <!-- Irrigation arm -->
+    <rect x="-70" y="-5" width="70" height="10" fill="#666"/>
+    
+    <!-- Sprinklers -->
+    <circle cx="-60" cy="-5" r="3" fill="#4682B4"/>
+    <circle cx="-40" cy="-5" r="3" fill="#4682B4"/>
+    <circle cx="-20" cy="-5" r="3" fill="#4682B4"/>
+    
+    <!-- Water spray -->
+    <path d="M -60,-5 Q -65,-15 -70,-10" stroke="#87CEEB" stroke-width="1" fill="none"/>
+    <path d="M -60,-5 Q -60,-20 -55,-15" stroke="#87CEEB" stroke-width="1" fill="none"/>
+    <path d="M -60,-5 Q -55,-18 -50,-10" stroke="#87CEEB" stroke-width="1" fill="none"/>
+    
+    <path d="M -40,-5 Q -45,-15 -50,-10" stroke="#87CEEB" stroke-width="1" fill="none"/>
+    <path d="M -40,-5 Q -40,-20 -35,-15" stroke="#87CEEB" stroke-width="1" fill="none"/>
+    <path d="M -40,-5 Q -35,-18 -30,-10" stroke="#87CEEB" stroke-width="1" fill="none"/>
+    
+    <path d="M -20,-5 Q -25,-15 -30,-10" stroke="#87CEEB" stroke-width="1" fill="none"/>
+    <path d="M -20,-5 Q -20,-20 -15,-15" stroke="#87CEEB" stroke-width="1" fill="none"/>
+    <path d="M -20,-5 Q -15,-18 -10,-10" stroke="#87CEEB" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Title and Caption -->
+  <text x="400" y="50" font-family="Arial" font-size="24" fill="#4CAF50" text-anchor="middle" font-weight="bold">Precision Agriculture Concept</text>
+  
+  <!-- Labels -->
+  <text x="200" y="135" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">UAV</text>
+  <text x="400" y="135" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">Sensors</text>
+  <text x="600" y="135" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">Satellite</text>
+  <text x="400" y="340" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">Data Processing</text>
+  <text x="100" y="540" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">Variable Rate Application</text>
+  <text x="700" y="540" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">Precision Irrigation</text>
+  
+  <!-- Field zones legend -->
+  <g transform="translate(80, 570)">
+    <rect x="0" y="0" width="15" height="15" fill="#228B22" opacity="0.5"/>
+    <text x="20" y="12" font-family="Arial" font-size="12" fill="#333">Healthy Zone</text>
+    
+    <rect x="120" y="0" width="15" height="15" fill="#32CD32" opacity="0.5"/>
+    <text x="140" y="12" font-family="Arial" font-size="12" fill="#333">Moderate Zone</text>
+    
+    <rect x="240" y="0" width="15" height="15" fill="#ADFF2F" opacity="0.5"/>
+    <text x="260" y="12" font-family="Arial" font-size="12" fill="#333">Stressed Zone</text>
+  </g>
+</svg>

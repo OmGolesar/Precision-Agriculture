@@ -1,0 +1,177 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">UAV Technology for Agricultural Applications</text>
+  
+  <!-- Central UAV Diagram -->
+  <g transform="translate(400, 240) scale(2.5)">
+    <!-- Drone Body -->
+    <rect x="-20" y="-5" width="40" height="10" rx="5" fill="#333" stroke="#222" stroke-width="0.5"/>
+    <circle cx="0" cy="0" r="8" fill="#444" stroke="#222" stroke-width="0.5"/>
+    
+    <!-- Rotors -->
+    <g>
+      <!-- Top left rotor -->
+      <circle cx="-25" cy="-25" r="5" fill="#666" stroke="#444" stroke-width="0.5"/>
+      <line x1="-30" y1="-25" x2="-20" y2="-25" stroke="#999" stroke-width="2"/>
+      <line x1="-25" y1="-30" x2="-25" y2="-20" stroke="#999" stroke-width="2"/>
+    </g>
+    
+    <g>
+      <!-- Top right rotor -->
+      <circle cx="25" cy="-25" r="5" fill="#666" stroke="#444" stroke-width="0.5"/>
+      <line x1="20" y1="-25" x2="30" y2="-25" stroke="#999" stroke-width="2"/>
+      <line x1="25" y1="-30" x2="25" y2="-20" stroke="#999" stroke-width="2"/>
+    </g>
+    
+    <g>
+      <!-- Bottom left rotor -->
+      <circle cx="-25" cy="25" r="5" fill="#666" stroke="#444" stroke-width="0.5"/>
+      <line x1="-30" y1="25" x2="-20" y2="25" stroke="#999" stroke-width="2"/>
+      <line x1="-25" y1="20" x2="-25" y2="30" stroke="#999" stroke-width="2"/>
+    </g>
+    
+    <g>
+      <!-- Bottom right rotor -->
+      <circle cx="25" cy="25" r="5" fill="#666" stroke="#444" stroke-width="0.5"/>
+      <line x1="20" y1="25" x2="30" y2="25" stroke="#999" stroke-width="2"/>
+      <line x1="25" y1="20" x2="25" y2="30" stroke="#999" stroke-width="2"/>
+    </g>
+    
+    <!-- Arms connecting body to rotors -->
+    <line x1="0" y1="0" x2="-25" y2="-25" stroke="#555" stroke-width="3"/>
+    <line x1="0" y1="0" x2="25" y2="-25" stroke="#555" stroke-width="3"/>
+    <line x1="0" y1="0" x2="-25" y2="25" stroke="#555" stroke-width="3"/>
+    <line x1="0" y1="0" x2="25" y2="25" stroke="#555" stroke-width="3"/>
+    
+    <!-- Camera/Sensor Mount -->
+    <rect x="-7" y="8" width="14" height="8" rx="2" fill="#222" stroke="#111" stroke-width="0.5"/>
+    
+    <!-- Lens -->
+    <circle cx="0" cy="12" r="4" fill="#333" stroke="#222" stroke-width="0.5"/>
+    <circle cx="0" cy="12" r="2" fill="#111"/>
+  </g>
+  
+  <!-- Component Labels with leader lines -->
+  <!-- Rotor Label -->
+  <line x1="300" y1="140" x2="330" y2="180" stroke="#4CAF50" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <circle cx="300" cy="140" r="15" fill="#4CAF50" opacity="0.2"/>
+  <text x="300" y="143" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">Rotor</text>
+  
+  <!-- Frame Label -->
+  <line x1="460" y1="290" x2="420" y2="250" stroke="#4CAF50" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <circle cx="460" cy="290" r="15" fill="#4CAF50" opacity="0.2"/>
+  <text x="460" y="293" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">Frame</text>
+  
+  <!-- Body Label -->
+  <line x1="500" y1="240" x2="440" y2="240" stroke="#4CAF50" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <circle cx="500" cy="240" r="15" fill="#4CAF50" opacity="0.2"/>
+  <text x="500" y="243" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">Body</text>
+  
+  <!-- Camera Label -->
+  <line x1="400" y1="350" x2="400" y2="300" stroke="#4CAF50" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <circle cx="400" cy="350" r="15" fill="#4CAF50" opacity="0.2"/>
+  <text x="400" y="353" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">Sensor</text>
+  
+  <!-- UAV Types Section -->
+  <text x="400" y="400" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Types of Agricultural UAVs</text>
+  
+  <!-- Types Grid -->
+  <g transform="translate(150, 450)">
+    <!-- Multirotor Icon -->
+    <g transform="scale(0.9)">
+      <!-- Body -->
+      <rect x="-10" y="-3" width="20" height="6" rx="3" fill="#333"/>
+      <circle cx="0" cy="0" r="5" fill="#444"/>
+      
+      <!-- Rotors -->
+      <circle cx="-15" cy="-15" r="3" fill="#666"/>
+      <circle cx="15" cy="-15" r="3" fill="#666"/>
+      <circle cx="-15" cy="15" r="3" fill="#666"/>
+      <circle cx="15" cy="15" r="3" fill="#666"/>
+      
+      <!-- Arms -->
+      <line x1="0" y1="0" x2="-15" y2="-15" stroke="#555" stroke-width="2"/>
+      <line x1="0" y1="0" x2="15" y2="-15" stroke="#555" stroke-width="2"/>
+      <line x1="0" y1="0" x2="-15" y2="15" stroke="#555" stroke-width="2"/>
+      <line x1="0" y1="0" x2="15" y2="15" stroke="#555" stroke-width="2"/>
+    </g>
+    
+    <text x="0" y="40" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Multirotor</text>
+    
+    <g transform="translate(0, 55)">
+      <rect x="-80" y="0" width="160" height="80" rx="5" fill="#f1f3f5" stroke="#dee2e6" stroke-width="1"/>
+      <text x="0" y="15" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Advantages:</text>
+      <text x="0" y="30" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">• Vertical takeoff and landing</text>
+      <text x="0" y="45" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">• Ability to hover in place</text>
+      <text x="0" y="60" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">• Easier to pilot</text>
+      <text x="0" y="75" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">• Better for detailed imaging</text>
+    </g>
+  </g>
+  
+  <g transform="translate(400, 450)">
+    <!-- Fixed-Wing Icon -->
+    <g transform="scale(0.9)">
+      <!-- Body -->
+      <rect x="-20" y="-3" width="40" height="6" rx="3" fill="#333"/>
+      
+      <!-- Wings -->
+      <path d="M -20,0 L -40,-5 L -30,0 L -40,5 Z" fill="#555"/>
+      <path d="M 20,0 L 40,-5 L 30,0 L 40,5 Z" fill="#555"/>
+      
+      <!-- Tail -->
+      <path d="M -20,0 L -30,10 L -20,5 Z" fill="#555"/>
+      <path d="M -20,0 L -30,-10 L -20,-5 Z" fill="#555"/>
+    </g>
+    
+    <text x="0" y="40" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Fixed-Wing</text>
+    
+    <g transform="translate(0, 55)">
+      <rect x="-80" y="0" width="160" height="80" rx="5" fill="#f1f3f5" stroke="#dee2e6" stroke-width="1"/>
+      <text x="0" y="15" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Advantages:</text>
+      <text x="0" y="30" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">• Longer flight time</text>
+      <text x="0" y="45" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">• Greater coverage area</text>
+      <text x="0" y="60" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">• Higher speed</text>
+      <text x="0" y="75" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">• More energy efficient</text>
+    </g>
+  </g>
+  
+  <g transform="translate(650, 450)">
+    <!-- VTOL Hybrid Icon -->
+    <g transform="scale(0.9)">
+      <!-- Body -->
+      <rect x="-20" y="-3" width="40" height="6" rx="3" fill="#333"/>
+      
+      <!-- Wings -->
+      <path d="M -10,0 L -35,-5 L -25,0 L -35,5 Z" fill="#555"/>
+      <path d="M 10,0 L 35,-5 L 25,0 L 35,5 Z" fill="#555"/>
+      
+      <!-- Rotors -->
+      <circle cx="-30" cy="-3" r="3" fill="#666"/>
+      <circle cx="30" cy="-3" r="3" fill="#666"/>
+      <circle cx="-15" cy="0" r="3" fill="#666"/>
+      <circle cx="15" cy="0" r="3" fill="#666"/>
+    </g>
+    
+    <text x="0" y="40" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">VTOL Hybrid</text>
+    
+    <g transform="translate(0, 55)">
+      <rect x="-80" y="0" width="160" height="80" rx="5" fill="#f1f3f5" stroke="#dee2e6" stroke-width="1"/>
+      <text x="0" y="15" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Advantages:</text>
+      <text x="0" y="30" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">• Vertical takeoff/landing</text>
+      <text x="0" y="45" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">• Extended flight range</text>
+      <text x="0" y="60" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">• Combines benefits of both</text>
+      <text x="0" y="75" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">• Versatile operations</text>
+    </g>
+  </g>
+  
+  <!-- Key Components Section at the bottom -->
+  <rect x="50" y="600" width="700" height="1" stroke="#ccc" stroke-width="1"/>
+  
+  <text x="400" y="580" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Key UAV Components for Agricultural Applications</text>
+  
+  <!-- Footer note -->
+  <text x="400" y="595" font-family="Arial" font-size="10" text-anchor="middle" fill="#666">Selection depends on field size, data needs, and operational requirements</text>
+</svg>
